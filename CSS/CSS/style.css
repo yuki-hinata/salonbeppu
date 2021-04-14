@@ -1,0 +1,222 @@
+
+*{
+    padding:0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    z-index: 10;
+}
+
+.salon-name{
+    padding-top: 68px;
+    padding-left: 77px;
+    padding-right: 20px;
+    font-size: 38px;
+}
+
+.salon-nav{
+    font-size: 18px;
+}
+
+.salon-nav ul{
+    display: flex;
+    padding-top: 77px;
+    font-weight: bold;
+} 
+
+.salon-nav ul .menu-title{
+    color: #000000;
+    padding-right: 21px;
+    display: inline-block;
+}
+
+.salon-nav ul .menu-title:after{
+    width: 48px;
+    content:"";
+    border-bottom: 1px solid #000000;
+    display: block;
+    position: relative;
+}
+
+.concept-title{
+    width: 99px;
+    height: 40px;
+}
+
+.access-title{
+    width: 83px;
+    height: 40px;
+}
+
+.reserve-title{
+    width: 97px;
+    height: 18px;
+}
+
+.salon-nav ul li:nth-child(n+2){
+    color: #707070;
+    margin-right: 21px;
+}
+
+#first-v{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.first-v-wrap{
+    width: 100%;
+}
+
+.first-v-title{
+    justify-content: center;
+    padding: 296px 105px 0 163px;
+    font-size: 38px;
+    width: 326px;
+    font-family: Hiragino Mincho Pro;
+    white-space: nowrap;
+}
+
+.first-v-word{
+    justify-content: center;
+    font-size: 38px;
+    padding: 48px 105px 290px 163px;
+}
+
+.women{
+    width: 100%;
+    height: 100%;
+}
+/* 共通部分 */
+.title-b{
+    display: flex;
+    color: #707070;
+    font-size: 18px;
+    height: 24px;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    padding-top: 270px;
+    padding-left: 105px;
+}
+
+.title-b::after{
+    width: 99px;
+    content: "";
+    border-top: 1px solid #707070;
+    display: inline-block;
+    margin-left: 23px;
+}
+
+#concept{
+    background: linear-gradient(#A193861F 43%,#A1938689 57%);
+    width: 100%;
+}
+
+
+.concept-wrap{
+  display: flex;
+  justify-content: center;
+}
+
+.concept-img{
+    width: 100%;
+    text-align: center;
+}
+
+.concept-content{
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.concept-title2{
+    color: #fff;
+    font-size: 40px;
+    white-space: nowrap;
+    margin: 100px;
+}
+
+.concept-word{
+    width: 422px;
+    color: #fff;
+    font-size: 16px;
+    padding-top: 69px;
+    padding-bottom: 64px;
+}
+
+.inner{
+    width: 100%;
+}
+
+.menu-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-item{
+    width: 275px;    
+}
+
+.menu-img{
+    width: 100%;
+    height: 270px;
+}
+
+.menu-title2{
+    padding: 40px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #000000;
+}
+
+.menu-content{
+    padding: 0 10px 50px 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.menu-price{
+    padding-bottom: 70px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+#access{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #A193861F;
+}
+
+
+
+.access-wrap{
+    width: 500px;
+    height: 400px;
+    background-color: #D0C5BA;
+}
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 350px; 
+}
+
