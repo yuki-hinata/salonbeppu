@@ -1,13 +1,4 @@
 
-*{
-    padding:0;
-    margin: 0;
-}
-
-ul{
-    list-style: none;
-}
-
 header{
     position: absolute;
     width: 100%;
@@ -75,29 +66,35 @@ header{
 }
 
 .first-v-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
 .first-v-title{
-    justify-content: center;
-    padding: 296px 105px 0 163px;
+    width: 330px;
+    text-align: center;
     font-size: 38px;
-    width: 326px;
-    font-family: Hiragino Mincho Pro;
     white-space: nowrap;
 }
 
 .first-v-word{
-    justify-content: center;
+    letter-spacing: 3.8px;
+    width: 390px;
+    height: 130px;
+    padding-top: 50px;
+    text-align: center;
     font-size: 38px;
-    padding: 48px 105px 290px 163px;
 }
 
 .women{
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 /* 共通部分 */
+
 .title-b{
     display: flex;
     color: #707070;
@@ -119,7 +116,7 @@ header{
 }
 
 #concept{
-    background: linear-gradient(#A193861F 43%,#A1938689 57%);
+    background: linear-gradient(#A193861F 50%,#A1938689 50%);
     width: 100%;
 }
 
@@ -130,9 +127,22 @@ header{
 }
 
 .concept-img{
-    width: 100%;
+    width: 90%;
     text-align: center;
 }
+
+.salon1{
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.salon5{
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 .concept-content{
     display: flex;
@@ -157,6 +167,7 @@ header{
 
 .inner{
     width: 100%;
+    margin: 0 auto;
 }
 
 .menu-wrap{
@@ -164,7 +175,7 @@ header{
     display: flex;
     justify-content: space-around;
 }
-
+        
 .menu-item{
     width: 275px;    
 }
@@ -174,9 +185,18 @@ header{
     height: 270px;
 }
 
+.menu-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
 .menu-title2{
-    padding: 40px 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0;
     font-weight: bold;
     font-size: 30px;
     color: #000000;
@@ -193,26 +213,61 @@ header{
     text-align: right;
     font-weight: bold;
     font-size: 16px;
-
 }
 
 #access{
-    display: flex;
-    justify-content: center;
     width: 100%;
     background-color: #A193861F;
 }
 
-
+.access-all{
+    display: flex;
+    padding-bottom: 70px;
+}
 
 .access-wrap{
-    width: 500px;
+
+    width: 40%;
     height: 400px;
     background-color: #D0C5BA;
 }
 
+.google-map{
+    height: auto;
+    width: 60%;
+}
 
+.google-map-iframe{
+    width: 100%;
+    height: 100%;
+}
 
+.access-title2{
+    font-size: 24px;
+    color: #00000038;
+    font-weight: bold;
+    padding-top: 100px;
+    padding-left: 105px;
+}
+
+.access-comment{
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 30px 200px 105px 105px;
+}
+
+.access-text{
+    padding-bottom: 20px;
+}
+
+.access-number{
+    padding-bottom: 20px;
+}
+
+.access-time{
+    padding-bottom: 20px;
+}
 
 
 footer{
@@ -220,3 +275,107 @@ footer{
     height: 350px; 
 }
 
+.foot{
+    height: 50%;
+    width: 80%;
+    border-bottom: solid #70707036;
+    margin: 80px 110px;
+}
+
+.icon{
+    height: 25%;
+    display: flex;
+    justify-content: end;
+    }
+
+.icon2{
+    padding-top: 10px;
+    width: 221.4px;
+    display: flex;
+}
+
+.salon-name2{
+    font-size: 32px;
+    color: #7070704D;
+    padding-left: 7%;
+}
+
+.size{
+    padding-left: 25px;
+    font-size: 1.5em;
+}
+
+.size2{
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+
+
+button{
+    width: 184px;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid #707070;
+    color: #707070;
+    margin: 0 10% 0 auto;
+}
+
+@media screen and (max-width:376px){
+    * {
+        float: none;
+        position: static;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-around;
+        background-color: #fff;
+        height: 10%;
+    }
+
+    .salon-name{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        font-size: 22px;
+    }
+
+    .salon-nav ul{
+        padding: 0;
+    }
+
+    .salon-nav{
+        display: none;
+    }
+    .hum{
+        width: 16px;
+        height: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    span{
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        background-color: #000;
+        z-index: 20;
+    }
+
+    .women{
+        width: 100%;
+    }
+    .salon3{
+        width: 376px;
+        height: 100%;
+    }
+}
