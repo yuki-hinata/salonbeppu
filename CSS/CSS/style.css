@@ -60,7 +60,7 @@ header{
 
 #first-v{
     width: 100%;
-    height: 800px;
+    height: auto;
     display: flex;
     justify-content: center;
 }
@@ -82,7 +82,6 @@ header{
 
 .first-v-word{
     letter-spacing: 3.8px;
-    width: 390px;
     height: 130px;
     padding-top: 50px;
     text-align: center;
@@ -108,7 +107,7 @@ header{
 }
 
 .title-b::after{
-    width: 99px;
+    width: 7%;
     content: "";
     border-top: 1px solid #707070;
     display: inline-block;
@@ -226,7 +225,6 @@ header{
 }
 
 .access-wrap{
-
     width: 40%;
     height: 400px;
     background-color: #D0C5BA;
@@ -355,27 +353,195 @@ button{
     .salon-nav{
         display: none;
     }
-    .hum{
+
+    .ham{
+        position: relative;
+        top: 28px;
         width: 16px;
-        height: 14px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        height: 10px;
+        display: block;
     }
 
     span{
+        position: absolute;
         display: inline-block;
         width: 100%;
-        height: 1px;
+        height: 2px;
+        border-color: black;
         background-color: #000;
         z-index: 20;
     }
 
+    span:nth-of-type(2){
+        top: 6px;
+    }
+
+    span:nth-of-type(3){
+        top: 12px;
+    }
+
+    .solid{
+        position: absolute;
+        width: 50%;
+    }
+
+    #first-v{
+        background-image: url(/salon_img/salon3.png);
+        background-size: 130%;
+        background-repeat: no-repeat;
+        background-position: left 0% top 160%;
+    }
+
+    .first-v-wrap{
+        width: 100%;
+        height: 600px;
+    }
+
+    .first-v-word{
+        order: 1;
+        padding-top: 0;
+        color: #fff;
+        font-size: 28px;
+        text-shadow: 0 3px 16px #000000;
+    }
+
+    .first-v-title{
+        order: 2;
+        color: #fff;
+        font-size: 23px;
+        text-shadow: 0 3px 16px #000000;
+    }
+
     .women{
+        width: 0;
+        height: 0;
+    }
+
+    .title-b{
+        padding:60px 0 50px 20px;
+    }
+
+    #concept{
+        background: linear-gradient(#A193861F 0%,#A193861F 30%,#A1938689 30%,#A1938689 100%);
+    }
+
+    .concept-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .concept-img{
         width: 100%;
     }
-    .salon3{
-        width: 376px;
+
+    .salon1{
+        width: 40%;
         height: 100%;
+        object-position: right;
+    }
+
+    .salon5{
+        width: 40%;
+        height: 100%;
+        object-position: center;
+    }
+
+    .concept-title2{
+        display: inline-block;
+        margin: 0;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .concept-word{
+        width: 80%;
+        height: 40%;
+        display: inline-block;
+        padding-top: 18px;
+        text-align: center;
+    }
+
+    .menu-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-item{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-img img{
+        width: 90%;
+    }
+
+    .menu-comment{
+        display: inline-block;
+        width: 90%;
+        text-align: center;
+    }
+
+    .access-all{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .google-map{
+        width: 100%;
+        height: 100%;
+        order: 1;
+    }
+
+    .access-wrap{
+        width: 90%;
+        height: 100%;
+        order: 2;
+        padding-left: 10%;
+    }
+
+    .access-title2{
+        padding: 30px 0;
+        padding-left: 0;
+    }
+
+    .access-comment{
+        padding: 0;
+    }
+
+    .access-day{
+        padding-bottom: 60px;
+    }
+
+    .foot{
+        height: 15%;
+        margin: 10%;
+    }
+
+    .icon{
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    button{
+        order: 1;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .salon-name2{
+        order: 2;
+        align-items: flex-end;
+    }
+
+    .icon2{
+       order: 2;
+       align-items: flex-end;
     }
 }
